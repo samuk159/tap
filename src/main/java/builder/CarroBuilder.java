@@ -12,7 +12,7 @@ public class CarroBuilder implements Builder {
         return new Carro(tipo, assentos, motor, transmissao, gps);
     }
     
-    //getters
+    //setters
 
     @Override
     public void setTipoCarro(TipoCarro tipo) {

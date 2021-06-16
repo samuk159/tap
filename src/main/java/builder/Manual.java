@@ -8,7 +8,10 @@ public class Manual {
     private Transmissao transmissao;
     private GPS gps;
 
-    public Manual(TipoCarro tipo, int assentos, Motor motor, Transmissao transmissao, GPS gps) {
+    public Manual(
+        TipoCarro tipo, int assentos, Motor motor, 
+        Transmissao transmissao, GPS gps
+    ) {
         this.tipo = tipo;
         this.assentos = assentos;
         this.motor = motor;
@@ -20,7 +23,8 @@ public class Manual {
         String info = "";
         info += "Tipo: " + tipo + "\n";
         info += "Número de assentos: " + assentos + "\n";
-        info += "Motor: Volume: " + motor.getVolume() + " - Quilometragem: " + motor.getQuilometragem() + "\n";
+        info += "Motor: Volume: " + motor.getVolume() 
+            + " - Quilometragem: " + motor.getQuilometragem() + "\n";
         info += "Transmissão: " + transmissao + "\n";
         info += (gps != null ? "Com GPS" : "Sem GPS") + "\n";
         

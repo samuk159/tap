@@ -12,7 +12,7 @@ public class ManualBuilder implements Builder {
         return new Manual(tipo, assentos, motor, transmissao, gps);
     }
     
-    //getters
+    //setters
 
     @Override
     public void setTipoCarro(TipoCarro tipo) {
